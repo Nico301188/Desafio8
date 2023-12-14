@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+html {
+    color: #C1FFFF;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 10rem;
+    color: #C1FFFF;
+    text-align: center;
+    text-shadow: -10px -5px 3px #058BB8, -15px -10px 5px #002941;
+}
+
+form,
+label {
+    font-size: 2rem;
+    text-align: center;
+}
+
+select,
+input {
+    font-size: 2rem;
+    color: #C1FFFF;
+    text-align: center;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+::placeholder {
+    color: #c1ffff7e;
+
+}
+
+textarea {
+    background: none;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    color: #C1FFFF;
+    font-size: 1.5rem;
+}
+
+form {
+
+    text-align: center;
+    padding: 2rem;
+    color: #C1FFFF;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+}
+
+fieldset {
+    padding-bottom: 8%;
+    border: none;
+    text-align: center;
+}
+
+legend {
+    border-style: double;
+    border-radius: 3rem;
+    text-align: center;
+    width: 20Vw;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.terminos {
+    text-align: center;
+}
+
+body {
+    background-image: url("https://diariodesign.com/wp-content/uploads/2023/05/masquespacio-king-kong-club-gimnasio-salzburgo-interior-diariodesign-942x531.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+button:hover {
+    font-size: 2rem;
+}
+
+button {
+    color: #C1FFFF;
+    border-style: double;
+    border-radius: 3rem;
+    text-align: center;
+    width: 20Vw;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 25px #04c8eb;
+    backdrop-filter: blur(10px);
+    background: transparent;
+}
+
+.align-center {
+    text-align: center;
+}

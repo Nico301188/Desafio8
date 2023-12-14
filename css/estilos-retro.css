@@ -1,0 +1,58 @@
+.banner {
+    background-image: url("https://img.freepik.com/vector-premium/gimnasio-retro_204123-82.jpg?w=740");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    background-color: #E89A45;
+    text-align: center;
+    border-radius: 5%;
+}
+
+fieldset {
+    border: solid 0.5rem #E89A45;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 5%;
+    background-color: #e9dda1a1;
+}
+
+legend {
+    background-color: #E9DDA1;
+    border-radius: 35%;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    display: block;
+}
+
+button {
+    background-color: #e9dda1a1;
+    font-size: 1rem;
+}
+
+.terminos {
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 5%;
+    background-color: #e9dda1a1;
+}
+
+.align-center {
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 5%;
+}

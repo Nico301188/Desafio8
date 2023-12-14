@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="estilo" rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body class="banner">
+    <button type="button" id="btn-dinamic" onclick='changeStyles();'>Cambiar estilo</button>
+    <!-- <button type="button" id="btn-dinamic" onclick='changeStylesSecuencial();'>Cambiar estilo</button> -->
+    <section >
+        <header>
+            <h1>Vení al Gym! 💪🏽</h1>
+        </header>
+        <form id="myForm" onsubmit="onSubmitIniciar(event)">
+            <fieldset class="fieldset-center">
+                <legend>🙋🏻‍♂️ Datos Personales 👀</legend>
+                <div>
+                    <label for="userName">Nombre:<sup>*</sup></label>
+                    <input id="userName" name="userName" type="text" autofocus required>
+                </div>
+                <div>
+                    <label for="userLastName">Apellido:<sup>*</sup></label>
+                    <input id="userLastName" name="userLastName" type="text" required>
+                </div>
+                <div>
+                    <label for="dni">Documento:<sup>*</sup></label>
+                    <input id="dni" name="dni" type="text" required>
+                </div>
+                <div>
+                    <label for="country">Nacionalidad:<sup>*</sup></label>
+                    <select name="country" id="country" required>
+                        <option selected>- Seleccionar -</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="OT">Otra</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Contanos un poco de vos...</label>
+                    <textarea name="msg" id="msg" cols="50" rows="5"></textarea>
+                </div>
+                <div>
+                    <label for="gane">Sexo<sup>*</sup></label>
+                    <div id="gane" name="gane" class="f-d-row align-center" requered>
+                        <input type="radio" name="gander" id="f" value="f" checked>
+                        <label for="f">Femenino</label>
+                        <input type="radio" name="gander" id="M" value="M">
+                        <label for="m">Masculino</label>
+                        <input type="radio" name="gander" id="o" value="o">
+                        <label for="o">otro</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="m-div">
+                <div class="circulos"></div>
+            </div>
+
+            <fieldset class="fieldset-center">
+                <legend>📱 Datos de contacto ✉</legend>
+                <div>
+                    <label for="phone">Teléfono:</label>
+                    <input id="phone" name="phone" type="number" placeholder="Código de área y número">
+                </div>
+                <div>
+                    <label for="correo">Direccion de correo electrónico:<sup>*</sup></label>
+                    <input id="correo" name="correo" type="email" placeholder="Ej: mail@gmail.com" required>
+                </div>
+            </fieldset>
+
+            <div class="m-div">
+                <div class="circulos"></div>
+            </div>
+
+            <fieldset class="fieldset-start">
+                <legend>🚴 Actividades 🏃‍♂️</legend>
+                <div>                    
+                    <p>Por favor, indicá cuáles actividades te interesan.</p>
+                    <div class="align-left">
+                        <label for="actividad" class="l-pading">Sede Palermo:</label>
+                        <div id="actividad" name="actividad" class="f-d-row align-center align-left" requered>
+                            <input type="checkbox" name="actividad" id="basquet" value="basquet">
+                            <label for="basquet">Básquet</label>
+                            <input type="checkbox" name="actividad" id="boxeo" value="boxeo">
+                            <label for="boxeo">Boxeo</label>
+                            <input type="checkbox" name="actividad" id="futbol" value="futbol">
+                            <label for="futbol">Fútbol</label>
+                            <input type="checkbox" name="actividad" id="tenis" value="tenis">
+                            <label for="tenis">Tenis</label>
+                        </div>
+                        <div>
+                            <label for="actividad" class="l-pading">Sede Rosario:</label>
+                            <div id="actividad" name="actividad" class="f-d-row align-center" requered>
+                                <input type="checkbox" name="actividad" id="basquetR" value="basquetR">
+                                <label for="basquetR">Básquet</label>
+                                <input type="checkbox" name="actividad" id="futbolR" value="futbolR">
+                                <label for="futbolR">Fútbol</label>
+                                <input type="checkbox" name="actividad" id="rugby" value="rugby">
+                                <label for="rugby">Rugby</label>
+                                <input type="checkbox" name="actividad" id="voley" value="voley">
+                                <label for="voley">Voley</label>
+                            </div>
+                </div>
+            </fieldset>
+            <div class="terminos">
+                <div id="term" name="term" class="align-center">
+                    <input type="checkbox" name="term" id="atyc" value="atyc" required>
+                    <label for="atyc">Acepto las condiciones<sup>*</sup></label>
+                </div>
+                <div id="term" name="term" class="align-center">
+                    <input type="checkbox" name="term" id="nov" value="nov" checked>
+                    <label for="nov">Deseo recibir novedades</label>
+                </div>
+                <div id="term" name="term" class="align-center">
+                    <p><sup>*</sup>:campo obligatorio.</p>
+                </div>
+            </div>
+            <div class="f-d-row align-center">
+                <button type="submit"  >Iniciar afiliación</button>
+                <button type="button" onclick='reset();'>Reestablecer</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+<script src="/js/main.js"></script>
+
+</html>
